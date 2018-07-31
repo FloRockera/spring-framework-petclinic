@@ -1,6 +1,7 @@
 package org.springframework.samples.petclinic.model;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertFalse;
 
 import java.util.Locale;
 import java.util.Set;
@@ -28,6 +29,8 @@ public class ValidatorTests {
     @Test
     public void shouldNotValidateWhenFirstNameEmpty() {
 
+    	assertFalse(true);
+    	
         LocaleContextHolder.setLocale(Locale.ENGLISH);
         Person person = new Person();
         person.setFirstName("");
